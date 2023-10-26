@@ -18,8 +18,8 @@ jobs:
         with:
           java-version: '11'
 
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Build with Maven
+        run: mvn clean intsall
 
       - name: Run JUnit tests
-        run: ./gradlew test
+        run: mvn test
